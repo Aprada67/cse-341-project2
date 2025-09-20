@@ -1,0 +1,20 @@
+{
+  "name": "cse-341-project2",
+  "version": "1.0.0",
+  "description": "To-Do List",
+  "homepage": "https://github.com/Aprada67/cse-341-project2#readme",
+  "bugs": {
+    "url": "https://github.com/Aprada67/cse-341-project2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aprada67/cse-341-project2.git"
+  },
+  "license": "ISC",
+  "author": "Alberto Prada",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
