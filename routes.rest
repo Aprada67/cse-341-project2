@@ -1,0 +1,29 @@
+// LOCALHOST
+### Get All Users
+GET http://localhost:3000/users
+
+### Get User by id
+GET http://localhost:3000/users/68ce9ee8729bf20eafaacae8
+
+### Create User
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "aprada",
+    "email": "aprada67@gmail.com",
+    "passwordHash": "hashed_password_1"
+}
+
+### Put User
+PUT http://localhost:3000/users/68cf0f4cdf7c6f257bf22e68 HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "hleonking",
+    "email": "hleonking@gmail.com",
+    "passwordHash": "hashed_password_5"
+}
+
+### DELETE User
+DELETE http://localhost:3000/users/68ce9ee8729bf20eafaacae8
