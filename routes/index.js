@@ -8,5 +8,6 @@ router.get('/', (req, res) => {
 });
 
 router.use('/users', require('./users'));
+router.use('/tasks', require('./tasks'));
 
 module.exports = router;
