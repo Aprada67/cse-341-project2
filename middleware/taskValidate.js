@@ -23,4 +23,6 @@ const saveTask = (req, res, next) => {
     });
 };
 
-module.exports = { saveTask };
+module.exports = {
+    saveTask
+};
