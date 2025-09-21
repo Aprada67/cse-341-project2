@@ -8,6 +8,7 @@ const isValidUser = (user) => {
 };
 
 const getAll = async (req, res) => {
+    //#swagger.tags=['Users']
     try {
         const result = await mongodb.getDatabase().db().collection('users').find();
         const users = await result.toArray();
@@ -19,6 +20,7 @@ const getAll = async (req, res) => {
 };
 
 const getSingle = async (req, res) => {
+    //#swagger.tags=['Users']
     try {
         const userId = new ObjectId(req.params.id);
         const result = await mongodb.getDatabase().db().collection('users').find({ _id: userId });
