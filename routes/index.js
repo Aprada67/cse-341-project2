@@ -1,18 +1,16 @@
-const passport = require('passport');
-
 const router = require('express').Router();
-
-router.use('/', require('./swagger'));
-
-router.get('/', (req, res) => {
-    //#swagger.tags=['Hello World]
-    res.send('Hello World');
-});
+const passport = require('passport');
 
 router.use('/users', require('./users'));
 router.use('/tasks', require('./tasks'));
+router.use('/', require('./swagger'));
 
-router.get('/login', passport.authenticate('github'), (req, res) => { });
+// router.get('/', (req, res) => {
+    //#swagger.tags=['Hello World]
+    //res.send('Hello World');
+//});
+
+router.get('/login', passport.authenticate('github'), (req, res) => {});
 
 router.get('/logout', function (req, res, next) {
     req.logout(function (err) {
